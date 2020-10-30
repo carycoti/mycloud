@@ -32,7 +32,7 @@ with open('index.html','w', encoding='utf-8') as f:
     f.write(f'<head>\n<title>{title}</title>\n')
     f.write(f'<meta http-equiv="Content-Typecontent="text/html; charset=UTF-8" />\n')
     f.write(f'</head>\n<body>\n<h1>{title}</h1>\n')
-    f.write('<h2>Sitemap</h2>\n')
+    f.write(f'<h2><a href="{url}">{title} 的索引</a></h2>\n')
     make(url, f)
     f.write('</body>\n</html>')
     
