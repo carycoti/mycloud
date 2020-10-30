@@ -1,0 +1,12 @@
+logs/*
+!.gitkeep
+node_modules/
+app/lib/
+tmp
+.DS_Store
+.idea
+__pycache__
+.vscode
+.history
+.devcontainer
+test/
