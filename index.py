@@ -27,7 +27,7 @@ def make(s, f):
     f.write('</ul>\n')
 
 
-with open('index.html','w') as f:
+with open('index.html','w', encoding='utf-8') as f:
     f.write(f'<!DOCTYPE html>\n<html>\n')
     f.write(f'<head>\n<title>{title}</title>\n')
     f.write(f'<meta http-equiv="Content-Typecontent="text/html; charset=UTF-8" />\n')
