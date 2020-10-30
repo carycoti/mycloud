@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 import io
 title='mycloud'
@@ -6,12 +8,11 @@ gitignore = ['.gitignore', '.git']
 with open('.gitignore', 'r') as f:
         for item in f:
             gitignore.append(item)
-print(gitignore)
 def make(s):
     d=os.listdir('.')
     with open('index.html','w') as f:
         f.write(f'<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>{title}</title></head><body><h1>{title}</h1><ul>\n')
-        f.write('<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>Sitemap</title></head><body><h2>Sitemap</h1><ul>\n')
+        f.write('<h2>Sitemap</h1><ul>\n')
         for i in d:
             if(not [False for item in gitignore if i in item]):
                 if(os.path.isdir(i)):
